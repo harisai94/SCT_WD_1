@@ -1,0 +1,150 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('background.avif') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  min-height: 100vh;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #ff4d4d;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+nav a:hover,
+nav a.active {
+  color: #00e5ff;
+}
+
+nav a.active::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: #00e5ff;
+  width: 100%;
+  margin-top: 4px;
+}
+
+
+.main-logo {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.main-logo img {
+  width: 300px;
+  max-width: 90%;
+  border-radius: 100px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+}
+
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about h2,
+.tournaments h2 {
+  color: #ff4d4d;
+  margin-bottom: 15px;
+}
+
+.about p {
+  font-size: 1.2em;
+  color: #cceeff;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.feature {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #ff4d4d;
+}
+
+.feature h3 {
+  margin-top: 0;
+  color: #ff4d4d;
+}
+
+.tournaments h2 {
+  font-size: 2em;
+  color: #00e5ff;
+  margin-bottom: 30px;
+}
+
+.tournament-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.tournament-card {
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid #00e5ff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  color: #fff;
+}
+
+.tournament-card:hover,
+.tournament-card:focus {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 229, 255, 0.6);
+  outline: none;
+}
+
+.tournament-card h3 {
+  color: #00e5ff;
+  font-size: 1.4em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.tournament-card p {
+  margin: 0;
+  font-size: 1em;
+  color: #f0f0f0;
+}
